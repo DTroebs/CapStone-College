@@ -89,7 +89,7 @@
 
 <!--Learning Section-->
   <div id="learningCategory">
-    <div id="demoContainer">
+    <div class="demoContainer">
       <h1>Start Learning</h1>
     </div>
     <div id="learningContainer">
@@ -152,11 +152,13 @@
 
 <!--Thesis Section-->
   <div id="thesisExhibit">
-    <h2>Thesis exhibit</h2>
+    <div class="demoContainer">
+      <h2>Thesis exhibit</h2>
+    </div>
     <div id="thesisExhibitContainer">
       <div id="upcomingContentLeft">
         <div id="thesisExhibitVideoContainer">
-          <video src="./Resources/Elements/videos/thesis.mp4">
+          <video src="./Resources/Elements/videos/thesis.mp4" autoplay controls loop>
           </video>
         </div>
         <h2>Reimagine urban</h2>
@@ -167,16 +169,20 @@
           <div class="upcomingContentEventsImage">
             <img src="./Resources/Elements/images/thesis-fisma.jpg"/>
           </div>
-          <h3>Fisma: Design and Production</h3>
-          <p>Designer showcase of new prototype product</p>
+          <div class="upcomingContainerDescription">
+            <h3>Fisma: Design and Production</h3>
+            <p>Designer showcase of new prototype product</p>
+          </div>
         </div>
 
         <div class="upcomingContentEvents">
           <div class="upcomingContentEventsImage">
             <img src="./Resources/Elements/images/thesis-now-and-then.jpg"/>
           </div>
-          <h3>Now and then</h3>
-          <p>Research study about New York</p>
+          <div class="upcomingContainerDescription">
+            <h3>Now and then</h3>
+            <p>Research study about New York</p>
+          </div>
         </div>
       </div>
     </div>
@@ -185,8 +191,10 @@
 <!--Footer Section-->
   <div id="footerContainer">
     <h4>© 2016 Capstone College.  All rights reserved</h4>
-    <span><a href="#">Terms</a></span>
-    <span><a href="#">Privacy</a></span>
+    <div>
+      <span><a href="#">Terms</a></span>
+      <span><a href="#">Privacy</a></span>
+    </div>
   </div>
   </body>
 </html>
