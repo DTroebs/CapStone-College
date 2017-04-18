@@ -139,16 +139,11 @@ html, body {
 
 #learningCategory {
   background-color: lightgrey;
-  height: 800px;
   padding-top: 32px;
   display: flex;
   flex-wrap: wrap;
-  /*flex-direction: column;*/
   justify-content: center;
   padding-bottom: 32px;
-}
-
-#learningCategory h1 {
 }
 
 #demoContainer {
@@ -157,22 +152,23 @@ html, body {
   display: flex;
   justify-content: center;
   align-self: center;
+  margin-bottom: 32px;
 }
 
 #learningContainer {
-  width: 700px;
-  min-width: 700px;
-  height: 700px;
+  width: 85%;
+  max-width: 1300px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: green;
+  /*background-color: green;*/
 }
 
 .learningBox {
   width: 30%;
-  height: 320px;
   background-color: white;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
 }
 
 .learningBox img {
