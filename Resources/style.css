@@ -40,7 +40,6 @@ html, body {
 
 #jumbotron {
   display: flex;
-  height: 400px;
   padding-left: 24px;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -51,14 +50,9 @@ html, body {
 
 #jumbotronLeftImage {
   width: 60%;
-  max-height: 400px;
-  max-width: 700px;
   height: auto;
   background-size: cover;
   overflow: hidden;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 24px;
 }
 
 #jumbotronLeftImage img {
@@ -84,7 +78,6 @@ html, body {
 
 #upcomingContent {
   display: flex;
-  height: 500px;
   padding-left: 24px;
   padding-top: 32px;
 }
@@ -98,12 +91,30 @@ html, body {
   max-height: 100%;
 }
 
+#upcomingContentLeftText {
+  margin-bottom: 1rem;
+}
+
+#upcomingContentRight {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .upcomingContentEvents {
   width: 423px;
-  height: 33%;
+  display: flex;
+  /*flex-direction: column;*/
+  /*flex-wrap: wrap;*/
+  /*height: 33%;*/
   border: 1px solid lightgrey;
   margin-left: 24px;
-  padding-left: 12px;
+  padding: 16px 16px;
+}
+
+.upcomingContainerDescription {
+  display: flex;
+  flex-direction: column;
 }
 
 .upcomingContentEvents:nth-child(2n+1) {
@@ -113,9 +124,11 @@ html, body {
 .upcomingContentEventsImage {
   width: 35%;
   height: auto;
+  /*display: inline-block;*/
   overflow: hidden;
   float: left;
-  padding-top: 10px;
+  /*padding-top: 10px;*/
+  /*padding-bottom: 10px;*/
   margin-right: 1rem;
 }
 
