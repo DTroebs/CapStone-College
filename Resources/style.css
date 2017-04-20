@@ -73,7 +73,7 @@ html, body {
   justify-content: center;
   display: flex;
   align-items: center;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
 }
 
 #upcomingContent {
@@ -208,5 +208,93 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: auto 24px;
+  padding-left: 24px;
+}
+
+/* Hiding the Mobile elements */
+@media screen and (min-width: 768px) {
+
+  #topNavigationMobile {
+    display: none;
+  }
+
+  .upcomingContentEventsImageMobile {
+    display: none;
+  }
+
+}
+
+/* Revealing Mobile elements + hiding desktop*/
+@media screen and (max-width: 768px) {
+
+  #leftTopBanner {
+    display: none;
+  }
+
+  #topBanner {
+    height: 64px;
+    /*justify-content: space-around;*/
+  }
+
+  #topNavigationMobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #topNavigation {
+    display: none;
+  }
+
+  #jumbotron {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 32px;
+  }
+
+  #jumbotronLeftImage {
+    width: 100%;
+    height: 180px;
+    background-color: darkgrey;
+  }
+
+  #jumbotronLeftImage img {
+    display: none;
+  }
+
+  #jumbotronRightText {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  #upcomingContent {
+    padding: 0;
+  }
+
+  #upcomingContentLeft {
+    display: none;
+  }
+
+  #upcomingContentRight {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .upcomingContentEventsImageDesktop {
+    display: none;
+  }
+
+  .upcomingContentEvents {
+    border: none;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .upcomingContentEventsImage {
+    width: 90%;
+    height: auto;
+  }
+
 }
