@@ -137,7 +137,7 @@ html, body {
   height: 100%;
 }
 
-#learningCategory {
+#learningCategoryDesktop {
   background-color: lightgrey;
   padding-top: 32px;
   display: flex;
@@ -222,6 +222,10 @@ html, body {
     display: none;
   }
 
+  #learningCategoryMobile {
+    display: none;
+  }
+
 }
 
 /* Revealing Mobile elements + hiding desktop*/
@@ -287,14 +291,67 @@ html, body {
 
   .upcomingContentEvents {
     border: none;
-    width: 100%;
+    width: auto;
     flex-direction: column;
     margin: 0;
   }
 
   .upcomingContentEventsImage {
-    width: 90%;
+    width: 96%;
     height: auto;
   }
 
+  #learningCategoryDesktop {
+    display: none;
+  }
+
+  #learningCategoryMobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #learningContainerMobile {
+    display: flex;
+    /*width: 100%;*/
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .learningBoxMobile {
+    background-color: darkgrey;
+    width: 350px;
+    margin-bottom: 8px;
+    padding: 1rem;
+  }
+
+  #thesisExhibitDesktop {
+    display: none;
+  }
+
+  #thesisExhibitMobile {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 24px;
+  }
+
+  #thesisExhibitVideoContainerMobile {
+    width: 100%;
+    height: auto;
+
+  }
+
+  #thesisExhibitVideoContainerMobile video {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  #footerContainer {
+    border: none;
+  }
+
+  #footerContainer span {
+    display: none;
+  }
 }
