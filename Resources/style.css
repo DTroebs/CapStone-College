@@ -96,6 +96,15 @@ html, body {
   margin-bottom: 1rem;
 }
 
+.quote {
+  font-family: "Source Sans Pro", serif;
+}
+
+#famousPerson {
+  font-family: "Source Sans Pro", serif;
+  font-style: italic;
+}
+
 #upcomingContentRight {
   display: flex;
   flex-direction: column;
